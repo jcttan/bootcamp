@@ -18,7 +18,7 @@
     </nav>
     <h1>Chicken<sup>2</sup>
         <br>
-        &cscr;&hscr;&iscr;&cscr;&kscr;&escr;&nscr; &hearts; &#9731;
+        &cscr;&hscr;&iscr;&cscr;&kscr;&escr;&nscr; &#9731;
     </h1>
     <!--entity code, can search for a list of other special characters online. they can also be modified by other tags-->
     <hr> <!-- Horizontal break-->
@@ -143,11 +143,50 @@
 
     <button type="button">Submit</button>
 
-<form action="https://www.google.com/search">
-    <input type="text" name="q">
-    <button>Search Google</button>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search Google</button>
 
-</form>
+    </form>
+
+    <h2>More Inputs</h2>
+    <form>
+        <label for="agree1">Select Shirt Size</label>
+        <input type="checkbox" name="agreeto" id="agree1">
+        <label for="agree1">I agree!</label>
+        <p>
+            <input type="radio" name="size" id="xs" value="xs">
+            <label for="xs">XS</label>
+            <input type="radio" name="size" id="s" value="s">
+            <label for="s">S</label>
+            <input type="radio" name="size" id="m" value="m">
+            <label for="m">M</label>
+        </p>
+        <p>
+
+            <label for="shirttype">Select Shirt Type</label>
+            <select name="type" id="shirttype">
+                <option value="dress">Dress Shirt</option>
+                <option value="casual">Casual</option>
+                <option value="sleeveless">Sleeveless</option>
+                <!-- insert "selected" in option tag to toggle an option as preselected  -->
+
+            </select>
+            <label for="amount">Amount</label>
+            <input type="number" id="amount" name="amount" min="1" max="10" step="1" value="1">
+        </p>
+        <p>
+            <input type="range" id="volume" name="volume" min="0" max="100" step="5">
+            <label for="volume">Volume</label>
+        </p>
+        <p>
+            <label for="instructions">Special Instructions:</label>
+            <br>
+            <textarea id="instructions" rows="5" cols="20" placeholder="Type comment here">
+</textarea>
+        </p>
+        <button>Submit</button>
+    </form>
 
 </body>
 
